@@ -1,0 +1,418 @@
+/* ==UserStyle==
+@name           UnderscoreAngel's 7ktTube hitchhiker bugfixes & Tweaks
+@namespace      github.com/openstyles/stylus
+@version        0.0.41
+@description    fixes some little bugs with 7ktTube's hitchhiker 2016 recreation (ONLY WORKS WITH 7KTTUBE!)
+@author         UnderscoreAngel
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+/*Top Bar Fix*/
+ #background.ytd-masthead {
+  z-index: -1;
+  opacity: 1;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background: var(--yt-spec-brand-background-primary);
+}
+
+
+.style-scope.ytd-item-section-renderer tp-yt-paper-button.ytd-subscribe-button-renderer {
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  color: #333;
+  height: 20px;
+  border-radius: 1px;
+  padding: 0 3px 0 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 11px;
+  font-weight: 500;
+    
+}
+
+.yt-spec-icon-badge-shape__icon {
+    fill:none;
+    left: 0;
+    opacity: .85;
+    margin-top: -2px;
+    margin-left: 1px;
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflNlthLq.webp) -698px -257px;
+    background-size: auto;
+    width: 30px;
+    height: 30px;
+    filter: invert(0.40);
+}
+
+.yt-icon-button[aria-label="Settings"] {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflNlthLq.webp) -624px 2px;
+    opacity:.5;
+    color:transparent
+}
+
+
+
+ytd-simple-menu-header-renderer{
+    border-bottom:none;
+}
+ytd-multi-page-menu-renderer[scrollbar-rework] .menu-container.ytd-multi-page-menu-renderer{
+    border-top:none;
+}
+
+ytd-notification-renderer.unread #new.ytd-notification-renderer 
+{
+  background-color: transparent;
+}
+
+ytd-topbar-menu-button-renderer:nth-last-of-type(3) yt-icon {
+  background: no-repeat url(https://i.ibb.co/093TxVq/settoing-real.png) !important;
+  fill: none !important;
+  scale: 1;
+  opacity: 0.8;
+  top: 1px;
+}
+
+
+#segmented-dislike-button #text {
+  top: 2px !important;
+font-family: "Roboto","Arial",sans-serif;
+}
+
+.choice-image.ytd-backstage-poll-renderer {
+  height: 90px; 
+  width: 90px;
+ }
+
+ytd-backstage-poll-renderer[is-image-poll] .vote-percentage-area.ytd-backstage-poll-renderer {
+  align-items: center;
+  height: 10%;
+  margin: 46%;
+  width: 100%;
+}
+
+ytd-backstage-poll-renderer {
+  --ytd-backstage-poll-choice-height: 90px;
+  --ytd-backstage-image-poll-choice-image-size: 20px;
+  --ytd-backstage-image-poll-choice-height: 20px;
+}
+
+#sign-in.yt-simple-endpoint.ytd-backstage-poll-renderer {
+  padding-bottom: 1px !important;
+  padding-top: 40px;
+  height: 24px !important;
+}
+
+ytd-backstage-poll-renderer[is-image-poll] .choice-text.ytd-backstage-poll-renderer {
+  color: var(--yt-spec-text-primary);
+  padding: 40px;
+  width: 100%;
+}
+
+tp-yt-paper-item.ytd-backstage-poll-renderer[selected] .vote-percentage.ytd-backstage-poll-renderer {
+  color: #128ee9 !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  left: -4px !important;
+}
+
+tp-yt-paper-item.ytd-backstage-poll-renderer:not([selected]) .vote-percentage.ytd-backstage-poll-renderer {
+  color: #000 !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  left: -4px !important;
+}
+
+
+}
+
+yt-icon.style-scope.ytd-badge-supported-renderer, ytd-author-comment-badge-renderer:not([m]) #icon.ytd-author-comment-badge-renderer {
+  color: transparent;
+  fill: transparent !important;
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-2x-vflbdpYum.webp) -146px -556px;
+  height: 9px;
+}
+
+.sbdd_b {
+  border-radius: 0px;
+}
+
+ytd-channel-tagline-renderer {
+    display: none;
+}    
+
+
+
+yt-img-shadow.ytd-channel-avatar-editor, yt-img-shadow.ytd-channel-avatar-editor img.yt-img-shadow, ytd-channel-avatar-editor, ytd-channel-avatar-editor .yt-simple-endpoint {
+  width: 110px !important;
+  height: 120px !important;
+  margin-top: -13px;
+
+}
+
+#meta.ytd-c4-tabbed-header-renderer {
+  min-width: 150px;
+  flex: 1;
+    flex-basis: 0%;
+  flex-basis: 0.000000001px;
+  margin-top: -30px;
+  padding-top: 5px;
+  margin-left: -10px;
+}
+
+#tabsContent.tp-yt-paper-tabs:not(.iron-selected) {
+  border-bottom: 4px solid transparent;
+}
+
+#tabsContent.scrollable.tp-yt-paper-tabs {
+  padding-top: 4px;
+}
+
+#avatar.ytd-c4-tabbed-header-renderer, #avatar.ytd-c4-tabbed-header-renderer img.yt-img-shadow {
+  top: -96px !important;
+  position: relative !important;
+  overflow: visible !important;
+  height: 110px !important;
+  width: 110px !important;
+  margin-top: -3px;
+  margin-left: 0px;
+}
+
+ytd-c4-tabbed-header-renderer[use-modern-style] #buttons.ytd-c4-tabbed-header-renderer {
+  padding: 0px 0;
+  margin-top: -27px;
+}
+
+ytd-app #subscriber-count.ytd-c4-tabbed-header-renderer {
+  left: 889px !important;
+ 
+}
+
+#subscriber-count.ytd-c4-tabbed-header-renderer {
+  position: absolute;
+  font-size: 11px !important;
+  letter-spacing: 0 !important;
+  color: #737373;
+  height: 22px !important;
+  line-height: 24px !important;
+  border: 1px solid #ccc;
+  padding: 0 72px 0 8px !important;
+  border-radius: 2px !important;
+  text-align: left !important;
+  left: 1160px !important;
+  top: 0px !important;
+  max-width: 21px;
+  padding-left: 0px;  
+  overflow: hidden;
+  margin-left: 2px;
+ }
+
+#header.ytd-browse ytd-button-renderer:nth-of-type(1) #button.ytd-button-renderer yt-formatted-string.ytd-button-renderer {
+  font-size: 0 !important;
+  color: #fff !important;
+  filter: invert(0);
+  position: absolute;
+  left: 83px !important;
+  top: -9px !important;
+ }
+
+
+ytd-button-renderer #button.ytd-button-renderer {
+  color: var(--yt-button-color,transparent);
+  background-color: transparent;
+  text-transform: var(--yt-button-text-transform,inherit);
+
+}
+
+ytd-c4-tabbed-header-renderer[use-modern-style] .meta-item.ytd-c4-tabbed-header-renderer {
+  display: inline-block;
+  margin-right: 0px;
+  white-space: nowrap;
+  color: var(--yt-spec-text-secondary);
+  font-family: "Roboto","Arial",sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+ytd-c4-tabbed-header-renderer[use-modern-style] #buttons.ytd-c4-tabbed-header-renderer {
+  padding: 0px 0;
+    padding-right: 0px;
+  margin-top: -27px;
+  padding-right: 72px;
+}
+
+ytd-channel-video-player-renderer[rounded] #player.ytd-channel-video-player-renderer {
+  overflow: hidden;
+  border-radius: 0px;
+  isolation: isolate;
+}
+
+ytd-channel-video-player-renderer {
+  padding: 0px 0 18px !important;
+  margin-top: -10.5px;
+}
+
+button#frex-downbut {
+
+    background: none;
+    color: red;
+    border: medium none;
+    display: none;
+}
+
+.ytp-ad-overlay-container.ytp-rounded-overlay-ad .ytp-ad-overlay-image img, .ytp-ad-overlay-container.ytp-rounded-overlay-ad .ytp-ad-text-overlay, .ytp-ad-overlay-container.ytp-rounded-overlay-ad .ytp-ad-enhanced-overlay {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 0px;
+}
+
+ytd-live-chat-frame[rounded-container] {
+  border-radius: 0px;
+}
+
+.ytcp-main-appbar {
+  margin: -12px;
+  width: 100%;
+  text-align: center;
+  line-height: 42px;
+  height: 42px;
+  border-bottom: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+  background-color: #fff;
+  position: fixed;
+  z-index: 2001;
+  font-size: 13px;
+  font-family: Roboto, arial, sans-serif;
+}
+
+ytd-browse[page-subtype="channels"] {
+  background: var(--yt-spec-general-background-b);
+  background-color: #f1f1f1;
+}
+
+#guide #guide-section-title.ytd-guide-section-renderer {
+  padding: 1px 0 11px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 11px;
+  height: 10px;
+}
+
+#video-title.ytd-rich-grid-media {
+  color: var(--yt-spec-text-primary);
+  font-family: "Roboto","Arial",sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  overflow: hidden;
+  display: block;
+  max-height: 3.6rem;
+  -webkit-line-clamp: 2;
+  display: box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+ margin-top: 2px
+}
+
+.super-title.ytd-video-primary-info-renderer a.yt-simple-endpoint.yt-formatted-string {
+  color: #128ee9 !important;
+  background-color: #f1f1f1;
+  border-radius: 2px;
+  padding: 0 4px;
+  margin-right: 6px;
+}
+
+
+html[dark] ytd-browse[page-subtype="channels"] {
+  background: var(--yt-spec-general-background-b);
+  background-color: #181818;
+}
+
+html[dark] ytd-notification-renderer {
+  border-bottom-color: #333;
+  background: #333;
+}
+
+html[dark] #items.yt-multi-page-menu-section-renderer > .yt-multi-page-menu-section-renderer:not([compact-link-style="compact-link-style-type-disclaimer"]).yt-multi-page-menu-section-renderer:not([component-style="RENDER_STYLE_SIMPLE_HEADER"]).yt-multi-page-menu-section-renderer:hover {
+  background-color: #0d0d0d;
+}
+
+html[dark] [menu-style="multi-page-menu-style-type-system"] #container #sections {
+  background: #292929;
+  padding-bottom: 0px;
+}
+    
+[menu-style="multi-page-menu-style-type-system"] #container #sections {
+  padding-bottom: 0px;
+  background: #f5f5f5;
+}
+
+.ytp-ad-overlay-container .ytp-ad-overlay-image img, .ytp-ad-overlay-container .ytp-ad-text-overlay, .ytp-ad-overlay-container .ytp-ad-enhanced-overlay {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 0px;
+}
+
+
+#subscriber-count.ytd-c4-tabbed-header-renderer {
+  position: absolute;
+  font-size: 11px !important;
+  font-weight: normal;
+    letter-spacing: 0 !important;
+  color: #737373;
+  height: 22px !important;
+  line-height: 24px !important;
+  border: 1px solid #ccc;
+  padding: 0 74px 0 8px !important;
+  border-radius: 2px !important;
+  text-align: left !important;
+  left: 1160px !important;
+  top: 3px !important;
+  max-width: 21px;
+  padding-left: 0px;
+  overflow: hidden;
+  margin-left: 2px;
+}
+
+#buttons.ytd-c4-tabbed-header-renderer > .ytd-c4-tabbed-header-renderer:not(:empty) {
+  margin-right: 28px;
+}
+
+
+
+/*subscribers label temp fix*/
+
+ytd-app #subscriber-count.ytd-c4-tabbed-header-renderer {
+  left: 1124px !important;
+}
+
+#buttons.ytd-c4-tabbed-header-renderer > .ytd-c4-tabbed-header-renderer:not(:empty) {
+  margin-right: 33px;
+}
+
+
+/*temp icon fix*/
+
+.yt-spec-icon-shape {
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+/*dropdown description menu fix*/
+
+ytd-menu-popup-renderer.style-scope.ytd-popup-container {
+  outline: none;
+  box-sizing: border-box;
+  max-width: 205.45px;
+  max-height: 158.95px;
+  border-radius: 3px;
+}
