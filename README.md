@@ -6,5 +6,5 @@ spaguetti code, but it might help someone i guess, keep reading i have a couple 
 
 i lastly want to apologize to this subreddit, if i ever insulted someone's "revival site" i don't like these because i've
 simply had bad experiences with them, but they do seem like a fun idea and i am aware that there are good moderated sites 
-that do a pretty good job, i've probably shouldn't have been to hard on some users.
+that do a pretty good job, i know i went too hard on some people, sorry
 
